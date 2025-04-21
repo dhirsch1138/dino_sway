@@ -24,7 +24,6 @@ modules:
    #   - micro
    #   - starship
       - code
-      - steam
       - steam-devices
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -38,7 +37,9 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - org.mozilla.firefox
-        - org.freedesktop.Platform.ffmpeg-full 
+        - org.freedesktop.Platform.ffmpeg-full
+        - com.valvesoftware.Steam
+        - sh.loft.devpod
    #   remove:
         #- org.gnome.eog
     #user: {} # Also add Flathub user repo, but no user packages
