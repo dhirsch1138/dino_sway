@@ -47,7 +47,7 @@ modules:
         - com.github.tchx84.Flatseal
         - com.usebottles.bottles
         - com.valvesoftware.Steam
-        - org.freedesktop.Platform.ffmpeg-full
+       #- org.freedesktop.Platform.ffmpeg-full
       # remove:
        #  - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
