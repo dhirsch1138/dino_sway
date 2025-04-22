@@ -38,16 +38,16 @@ modules:
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
-    install:
-      - org.mozilla.firefox
-      - org.freedesktop.Platform.ffmpeg-full
-      - com.valvesoftware.Steam
-      - sh.loft.devpod
-      - org.gnome.World.PikaBackup
-      - org.kde.kphotoalbum
-      - com.github.PintaProject.Pinta
-      - com.github.tchx84.Flatseal
-      - com.usebottles.bottles
+       install:
+        - org.mozilla.firefox
+        - org.freedesktop.Platform.ffmpeg-full
+        - com.valvesoftware.Steam
+        - sh.loft.devpod
+        - org.gnome.World.PikaBackup
+        - org.kde.kphotoalbum
+        - com.github.PintaProject.Pinta
+        - com.github.tchx84.Flatseal
+        - com.usebottles.bottles
    #   remove:
         #- org.gnome.eog
     #user: {} # Also add Flathub user repo, but no user packages
