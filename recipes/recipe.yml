@@ -18,11 +18,11 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: rpm-ostree
-  #  repos:
-   #   - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-   #   - micro
-   #   - starship
+      - micro
+      - starship
       - code
       - steam-devices
       - stow
@@ -36,10 +36,9 @@ modules:
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
-    user:
-    #system:
+    system:
       # If no repo information is specified, Flathub will be used by default
-       install:
+      install:
         - org.mozilla.firefox
         - org.freedesktop.Platform.ffmpeg-full
         - com.valvesoftware.Steam
@@ -49,11 +48,9 @@ modules:
         - com.github.PintaProject.Pinta
         - com.github.tchx84.Flatseal
         - com.usebottles.bottles
-   #   remove:
-        #- org.gnome.eog
-    #user: {} # Also add Flathub user repo, but no user packages
-    # user:
-    #   install:
+      remove:
+        - org.gnome.eog
+    user: {} # Also add Flathub user repo, but no user packages
     
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
