@@ -30,7 +30,6 @@ modules:
       - lynx
       - vorta
       - bottles
-      - steam
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -47,6 +46,7 @@ modules:
         - org.kde.kphotoalbum
         - com.github.PintaProject.Pinta
         - com.github.tchx84.Flatseal
+        - com.valvesoftware.Steam
        #- org.freedesktop.Platform.ffmpeg-full
       # remove:
        #  - org.gnome.eog
