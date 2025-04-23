@@ -28,6 +28,9 @@ modules:
       - stow
       - docker
       - lynx
+      - vorta
+      - bottles
+      - steam
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -41,12 +44,9 @@ modules:
       install:
         - org.mozilla.firefox
         - sh.loft.devpod
-        - org.gnome.World.PikaBackup
         - org.kde.kphotoalbum
         - com.github.PintaProject.Pinta
         - com.github.tchx84.Flatseal
-        - com.usebottles.bottles
-        - com.valvesoftware.Steam
        #- org.freedesktop.Platform.ffmpeg-full
       # remove:
        #  - org.gnome.eog
