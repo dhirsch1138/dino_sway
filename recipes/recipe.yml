@@ -55,7 +55,7 @@ modules:
   - type: chezmoi
     repository: "https://github.com/dhirsch1138/dotfiles" # my dotfiles repo
     # all-users: false # make users have to enable chezmoi manually, default true
-    file-conflict-policy: replace # override changed files with those from the repo, default skip
+    # file-conflict-policy: replace # override changed files with those from the repo, default skip
     
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
